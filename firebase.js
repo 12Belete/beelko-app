@@ -1,13 +1,22 @@
-// BEELKO Firebase Configuration
+// Import Firebase
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
 
+// Firebase Configuration
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
+  apiKey: "AIzaSyDiM1RFp-yWr9luVLJslNJYiZOhsiwLLO4",
   authDomain: "beelko-7dcaa.firebaseapp.com",
   projectId: "beelko-7dcaa",
-  storageBucket: "beelko-7dcaa.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  storageBucket: "beelko-7dcaa.firebasestorage.app",
+  messagingSenderId: "757679525639",
+  appId: "1:757679525639:web:faceb6756f2ab687de7fa2",
+  measurementId: "G-7YPRWT675Q"
 };
 
-// Firebase SDK code yeroo itti aanu asitti dabalna.
-console.log("BEELKO Firebase Ready");
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+console.log("✅ BEELKO Firebase Connected");
