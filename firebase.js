@@ -20,3 +20,4 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 
 console.log("✅ BEELKO Firebase Connected");
+export { auth, db };
