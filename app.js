@@ -1,5 +1,14 @@
-function login(){
-    alert("BEELKO Login is coming soon!");
+function login() {
+  const email = document.getElementById("loginEmail").value;
+  const password = document.getElementById("loginPassword").value;
+
+  if (!email || !password) {
+    alert("Please enter your email and password.");
+    return;
+  }
+
+  alert("Login button is working!");
+}
 }
 
 function signup(){
